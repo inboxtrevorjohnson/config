@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: notification-service
+    name: lifebiofeign
     version: 1.0.0
 
 eureka:
