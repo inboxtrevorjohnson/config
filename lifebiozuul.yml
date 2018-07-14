@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: lifebioapplicationgateway
+    version: 1.0.0
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    preferIpAddress: true
+
+zuul:
+  routes:
+    contactdetailsUI:
+      serviceId: LifeBioContactDetails
+  host:
+    socket-timeout-millis: 30000
