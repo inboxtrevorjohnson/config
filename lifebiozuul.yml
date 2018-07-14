@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: lifebioapplicationgateway
+    name: lifebiozuul
     version: 1.0.0
 
 eureka:
