@@ -21,3 +21,16 @@ zuul:
 
   host:
     socket-timeout-millis: 30000
+
+ribbon:
+  eager-load:
+    enabled: true
+    clients: LifeBioFeign
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 3000
