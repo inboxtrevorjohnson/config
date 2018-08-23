@@ -27,3 +27,6 @@ hystrix:
       execution:
         timeout:
           enabled: false
+
+ribbon:
+  ReadTimeout: 6000
