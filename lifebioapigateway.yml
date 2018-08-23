@@ -19,7 +19,7 @@ zuul:
     lifeBioUI:
       serviceId: LifeBioFeign
   host:
-    socket-timeout-millis: 30000
+    socket-timeout-millis: 60000
 
 hystrix:
   command:
@@ -29,4 +29,4 @@ hystrix:
           enabled: false
 
 ribbon:
-  ReadTimeout: 6000
+  ReadTimeout: 12000
