@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: lifebiofeign
+    name: lifebioapigateway
     version: 1.0.0
 
 eureka:
@@ -16,7 +16,7 @@ eureka:
 zuul:
   routes:
     lifeBioUI:
-      serviceId: LifeBioFeign
+      serviceId: LifeBioAPIGateway
   host:
     socket-timeout-millis: 30000
 
