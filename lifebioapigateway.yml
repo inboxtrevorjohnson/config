@@ -6,13 +6,6 @@ spring:
     name: lifebioapigateway
     version: 1.0.0
 
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://192.168.99.100:8761/eureka
-  instance:
-    preferIpAddress: true
-
 zuul:
   routes:
     lifeBioUI:
