@@ -19,6 +19,7 @@ zuul:
       serviceId: LifeBioAPIGateway
   host:
     socket-timeout-millis: 30000
+  sensitiveHeaders: Cookie,Set-Cookie
 
 hystrix:
   command:
@@ -29,3 +30,13 @@ hystrix:
 
 ribbon:
   ReadTimeout: 29000
+
+security:
+  basic:
+    enabled: false
+
+feign:
+  oauth2:
+    enabled: true
+  hystrix:
+    enabled: false
