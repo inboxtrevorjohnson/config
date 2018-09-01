@@ -1,0 +1,31 @@
+server:
+  port: 4001
+
+spring:
+  application:
+    name: lifebiofeign
+    version: 1.0.0
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.99.100:8761/eureka
+  instance:
+    preferIpAddress: true
+
+zuul:
+  routes:
+    lifeBioUI:
+      serviceId: LifeBioFeign
+  host:
+    socket-timeout-millis: 30000
+
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: false
+
+ribbon:
+  ReadTimeout: 29000
