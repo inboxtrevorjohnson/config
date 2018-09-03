@@ -1,0 +1,25 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.99.100:8761/eureka
+  instance:
+    preferIpAddress: true
+
+spring:
+  application:
+    name: lifebioperson
+  cloud:
+    config:
+      uri: http://192.168.99.100:8888
+  profiles:
+    active: default
+
+  datasource:
+    url: jdbc:postgresql://192.168.99.100:5432/LifeBio
+    username: crazymonkey
+    password: J@ck_@55
+
+  jpa:
+    show-sql: true
+    hibernate:
+        ddl-auto: create-drop
