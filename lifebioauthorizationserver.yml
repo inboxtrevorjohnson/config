@@ -1,0 +1,7 @@
+server:
+  port: 4004
+
+spring:
+  application:
+    name: lifebioauthorizationserver
+    version: 1.0.0
